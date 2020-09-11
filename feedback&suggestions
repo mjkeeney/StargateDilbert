@@ -1,0 +1,9 @@
+Curl command examples, complete basic walkthrough (like opscenter APIs).  Include examples from cqlsh/astra console. Fully graphic walkthrough. Schema explanation? 
+
+"Try it out" and "execute" button in Swagger might need tutorial/detailed doc
+
+If create table with wrong data, how to replace with same name? Example, created using raw data, but need to use json. Do we drop? Just avoid this and change name?
+
+Astra cqlsh console slow. Intermittently times out/resets.  Standalone cqlsh necessary
+
+Keyspace == namespace(?)  DatabaseID == clusterID(?) Not clear in documentation, where do we find and map information to rest calls? Consistency
