@@ -1,0 +1,17 @@
+https://github.com/mjkeeney/StargateDilbert
+
+Run remote cqlsh:
+automaton@ip-10-101-33-62:~/cqlsh-astra$  ./bin/cqlsh -u stargate -p datastax -b ../secure-connect-support.zip
+
+Get Auth token:
+curl -X POST -d '{"username":"stargate","password":"datastax"}' -H 'Content-Type: application/json' https://8c5b4d48-7834-4dd5-8d60-668bac7f4a65-us-east1.apps.astra.datastax.com/api/rest/v1/auth
+
+Insert Json doc:
+~/zendesk_cache_data/data/tickets$ curl --location --request PUT 'https://8c5b4d48-7834-4dd5-8d60-668bac7f4a65-us-east1.apps.astra.datastax.com/api/rest/v2/namespaces/dilbert/collections/ticketsjb/52311' --header 'X-Cassandra-Token: 97766208-5d00-4989-b7e1-205ddf5c4f5a' --header 'Content-Type: application/json' --data "@52311.json"
+
+Query:
+curl --location --request GET 'https://8c5b4d48-7834-4dd5-8d60-668bac7f4a65-us-east1.apps.astra.datastax.com/api/rest/v2/namespaces/dilbert/collections/tickets/52311' \
+--header 'X-Cassandra-Token: 7cfb785e-167d-4608-938e-fae1766bed97'
+
+Query with json pretty print:
+curl --location --request GET 'https://8c5b4d48-7834-4dd5-8d60-668bac7f4a65-us-east1.apps.astra.datastax.com/api/rest/v2/namespaces/dilbert/collections/tickets/52311' --header 'X-Cassandra-Token: 97766208-5d00-4989-b7e1-205ddf5c4f5a' --header 'Content-Type: application/json' | jq
