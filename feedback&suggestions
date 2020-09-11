@@ -17,3 +17,5 @@ RequestUrl doesn't align with Stargate URL, different hosts etc:
   curl --location --request GET 'https://8c5b4d48-7834-4dd5-8d60-668bac7f4a65-us-east1.apps.astra.datastax.com/api/rest/v2/namespaces/dilbert/collections/tickets/52311' --header 'X-Cassandra-Token: 97766208-5d00-4989-b7e1-205ddf5c4f5a' --header 'Content-Type: application/json' | jq
 
 Data load seems very slow. 12k user records (Zendesk data) took 1 hour and 5 minutes to complete
+
+Databases park themselves
