@@ -1,0 +1,7 @@
+Application idea:
+
+Assume that most of the high/urgent tickets for a cluster mean the cluster is in a bad state and requires Services intervention to stabilize.
+Assume that most of the normal/low tickets for a certain cluster are "howto"/"training through ticket" inquiries, which requires end user training.
+The project end goal is to check the number of tickets for each cluster and:
+- if there are many high/urgent priority tickets created, then send an email alert to the customer's account team so they can suggest a Services engagement. 
+- if there are many normal/low priority tickets created, , then send an email alert to the customer's account team so they can suggest to the customer additional training through the DataStax Academy.
