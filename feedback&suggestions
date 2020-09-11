@@ -1,5 +1,7 @@
 Curl command examples, complete basic walkthrough (like opscenter APIs).  Include examples from cqlsh/astra console. Fully graphic walkthrough. Schema explanation? 
 
+Explain in docs how schema is auto generated?
+
 "Try it out" and "execute" button in Swagger might need tutorial/detailed doc
 
 If create table with wrong data, how to replace with same name? Example, created using raw data, but need to use json. Do we drop? Just avoid this and change name?
